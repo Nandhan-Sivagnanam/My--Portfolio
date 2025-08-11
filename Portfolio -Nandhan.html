@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Nandhan</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Nav  -->
+
+<nav class="navbar">
+  <div class="nav-header">
+    <div class="logo">Portfolio - Nandhan</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+<!-- All Below Sections -->
+
+  <section class="content" id="Home">
+    <div class="intro">
+      <h1>Hello, My Name Is <span class="highlight">Nandhan</span></h1>
+      <h2><span class="typed-text">I'm a Java Developer</span><span class="cursor">|</span></h2>
+
+      <h3 class="social-heading">Hit Me Up</h3>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nandhan-s-575412304" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nandhansiva2002@gmail.com" target="_blank" aria-label="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/Nandhan-Sivagnanam" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+<section class="about-section" id="about">
+  <div class="about-card">
+
+    <!-- Row 1: Image + About Description -->
+    <div class="top-row">
+      <div class="about-image-wrapper">
+        <div class="polaroid-frame">
+          <img src="Ram Dir.jpg" alt="Nandhan" class="polaroid-img" />
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="about-description">
+          <h1>Who Am I?</h1>
+          <p>I'm Nandhan, an MSc Computer Science graduate passionate about software development.<br> I have a strong foundation in Core Java and object-oriented programming. Able to write clean Java code and build basic applications using Java SE and JDBC.</p>
+          <p>I’ve developed a crowdfunding web application using PHP, MySQL, and JavaScript, and also worked on a machine learning project to predict flight prices.</p>
+          <p>I'm eager to start my journey as an entry-level Java Developer and always motivated to learn and grow in the tech industry.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Row 2: Now correctly placed OUTSIDE -->
+    <div class="bottom-row">
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="education-timeline">
+          <div class="education-item">
+            <div class="timeline-marker"></div>
+            <div class="education-content">
+              <h3>MSc Computer Science</h3>
+              <p>Annamalai University, Chidambaram<br>2023 - 2025</p>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="timeline-marker"></div>
+            <div class="education-content">
+              <h3>BSc Computer Science</h3>
+              <p>Bharathidasan university, <br>Puthur, Sirkazhi<br>2020 - 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skill"><label>Java</label><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+        <div class="skill"><label>MySQL</label><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
+        <div class="skill"><label>PHP</label><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
+        <div class="skill"><label>HTML/CSS</label><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill"><label>JavaScript</label><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
+      </div>
+
+      <div class="interests-section">
+        <h2>My Interests</h2>
+        <ul class="interests-list">
+          <li>Films & Music</li><li>Photo Editing</li><li>Video Editing</li><li>Travelling</li><li>Coding</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="projects-section animate-target" id="projects">
+
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Crowdfunding Platform Web Application</h3>
+      <p>This project allows users to create and fund campaigns. Built using PHP, MySQL, and JavaScript with a responsive frontend. It manages user authentication and Campaign Management.</p>
+      <a href="https://github.com/Nandhan-Sivagnanam/Nandhan-Crowdfunding-Platform.git" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Flight Price Prediction Model</h3>
+      <p>A machine learning project that predicts airline ticket prices using data preprocessing and regression techniques. Built with Python and scikit-learn to help users find the best time to book flights.</p>
+      <a href="https://github.com/Nandhan-Sivagnanam/Nandhan-Optimizing-Flight-Booking-Decisions-Through-Machine-Learning-Price-Prediction-main.git" target="_blank">🔗 View on GitHub</a>
+    </div>
+  </div>
+</section>
+<!-- Certifications -->
+<section class="certification-section animate-target" id="certifications">
+
+  <h2 class="section-title">Certifications</h2>
+  <div class="certification-container">
+    
+    <div class="certificate-card">
+      <img src="Java certificate (1).jpg" alt="Certificate 1" class="certificate-img" onclick="openModal(this)">
+      <h3>Java Programming</h3>
+      <p>Issued by: InfoSystem Software Training and Development</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="/figma Certificate.jpg" alt="Certificate 2" class="certificate-img" onclick="openModal(this)">
+      <h3>New Figma 2024: Getting started the Beginner to Pro Class</h3>
+      <p>Issued by: Udemy</p>
+    </div>
+    <div class="certificate-card">
+      <img src="/GuviCertification.png" alt="Certificate 2" class="certificate-img" onclick="openModal(this)">
+      <h3>GUVI's Webinar - Top Tools To Supercharge Your UI/UX Design Skills</h3>
+      <p>Issued by: GUVI</p>
+    </div>
+
+  </div>
+</section>
+<div id="imageModal" class="modal" onclick="closeModal(event)">
+  <span class="modal-close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImage" />
+</div>
+
+<section class="contact-section" id="contact">
+  <h2 class="contact-heading">Contact</h2>
+  <div class="contact-icons single-line">
+    <div class="icon-box">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nandhansiva2002@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+        <span>Gmail</span>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="tel:+919876543210">
+        <i class="fas fa-phone"></i>
+        <span>+91 9361609280</span>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="https://www.linkedin.com/in/nandhan-s-575412304" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="https://github.com/Nandhan-Sivagnanam" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <p>© 2025 Nandhan. All rights reserved.</p>
+</footer>
+
+
+
+<script src="portfolio-js.js"></script>
+</body>
+</html>
