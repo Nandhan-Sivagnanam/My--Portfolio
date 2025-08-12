@@ -836,6 +836,43 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  /* Center & resize image */
+  .polaroid-frame {
+    max-width: 75%;
+    width: 75%;
+    aspect-ratio: 1 / 1.2;
+    padding: 10px 10px 30px;
+    border-radius: 14px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+    transform: rotate(-4deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0 auto; /* perfectly center horizontally */
+  }
+
+  /* Give breathing space for text */
+  .about-description {
+    padding: 0 20px;
+    text-align: justify;
+    text-justify: inter-word; /* makes lines stretch evenly */
+  }
+
+  /* Slightly smaller heading for mobile */
+  .about-description h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Better text spacing for readability */
+  .about-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+  }
+}
 
 
 /* Project Section ---- */
