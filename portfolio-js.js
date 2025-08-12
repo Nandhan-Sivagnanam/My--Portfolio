@@ -52,23 +52,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section[id]");
 
   // Toggle mobile menu
-  toggle.addEventListener("click", () => {
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
     navLinks.classList.toggle("show");
   });
 
-  // Close mobile menu on click + set active immediately
+  // Close mobile menu on click inside menu (links)
   navItems.forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("show");
       navItems.forEach(item => item.classList.remove("active"));
-      link.classList.add("active"); // keep active after click
+      link.classList.add("active");
     });
   });
 
-  // Scroll spy
-  window.addEventListener("scroll", () => {
-    let scrollPos = window.scrollY + 100;
+  // Close menu if clicking outside
+  document.addEventListener("click", (e) => {
+    if (navLinks.classList.contains("show") && !navLinks.contains(e.target) && !toggle.contains(e.target)) {
+      navLinks.classList.remove("show");
+    }
+  });
 
+  // Scroll spy function
+  const updateActiveLink = () => {
+    let scrollPos = window.scrollY + 100;
     let foundActive = false;
 
     sections.forEach(section => {
@@ -86,13 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // ✅ If scrolled to bottom, keep #contact active
+    // If at the bottom, keep #contact active
     if (!foundActive && window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
       navItems.forEach(link => link.classList.remove("active"));
       const contactLink = document.querySelector('.nav-links a[href="#contact"]');
       if (contactLink) contactLink.classList.add("active");
     }
-  });
+  };
+
+  // Run on scroll
+  window.addEventListener("scroll", updateActiveLink);
+
+  // ✅ Run once on page load to set the correct active link after refresh
+  updateActiveLink();
 });
 
  
