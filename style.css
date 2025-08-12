@@ -850,27 +850,30 @@ body {
     justify-content: center;
     align-items: center;
     background: white;
-    margin: 0 auto; /* perfectly center horizontally */
+    margin: 0 auto; /* Centers horizontally */
   }
 
-  /* Give breathing space for text */
+  /* Text block spacing & justification */
   .about-description {
-    padding: 0 20px;
+    padding: 0 18px; /* space from edges */
     text-align: justify;
-    text-justify: inter-word; /* makes lines stretch evenly */
+    text-justify: inter-word; /* distributes words evenly */
+    hyphens: auto; /* breaks long words neatly */
   }
 
-  /* Slightly smaller heading for mobile */
+  /* Heading size adjustment for mobile */
   .about-description h1 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
 
-  /* Better text spacing for readability */
+  /* Paragraph styling for perfect alignment */
   .about-description p {
     font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.9);
+    line-height: 1.7;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 1.2rem;
+    word-spacing: 0.08em; /* small tweak to fill lines better */
   }
 }
 
